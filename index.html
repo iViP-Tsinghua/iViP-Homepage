@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-y: scroll">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="icon" type="image/png" href="image/iViplogo.png"/>
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <link rel="stylesheet" href="iVip.css"/>
+    <title>iVip of Tsinghua University</title>
+    <script>
+        $(document).ready(function () {
+            $("#myCarousel").carousel({interval: 5000});
+        });
+    </script>
+</head>
+<body>
+<div id="nav-bar">
+    <div class="container">
+        <a href="index.html"><img src="image/iViplogo.png" class="iVip-logo"/></a>
+        <a href="index.html"><img src="image/ofTsinghuaUniversity.png" class="tsinghua-logo"/></a>
+        <ul>
+            <li id="nav-contact"><a href="contact/contact.html">CONTACT</a></li>
+            <li id="nav-publications"><a href="publications/publications.html">PUBLICATIONS</a></li>
+            <li id="nav-people"><a href="people/people.html">PEOPLE</a></li>
+            <li id="nav-research"><a href="research/research.html">RESEARCH</a></li>
+            <li id="nav-news"><a href="news/news.html">NEWS</a></li>
+            <li id="nav-home" class="active"><a href="index.html">HOME</a></li>
+        </ul>
+    </div>
+</div>
+<div id="box">
+    <div id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="myitem" style="background:url(image/carousel1.jpg);">
+                    <div class="in-item">
+                        <div>
+                            <h1>Welcome to iVip!</h1>
+                        </div>
+                        <div class="content">
+                            <p>
+                                integrated Vision, intelligent perception.
+                            </p>
+                            <p>
+                                We are trying to realize Artificial Perception Systems with various electronic
+                                technologies, which could be applied to enhance environmental awareness of organism
+                                and robots, as well as IOT devices for environment monitoring.
+                            </p>
+                        </div>
+                        <a href="contact/contact.html" class="btn">Contact us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="myitem" style="background:url(image/carousel2.jpg);">
+                    <div class="in-item">
+                        <div>
+                            <h1><img src="image/2.png"/>Integrated Circuit</h1>
+                        </div>
+                        <div class="content">
+                            <p>
+                                Perceptual Computing Architectures and Integrated Circuits.
+                            </p>
+                        </div>
+                        <a href="research/research.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="myitem" style="background:url(image/carousel3.jpg);">
+                    <div class="in-item">
+                        <div>
+                            <h1><img src="image/1.png"/>Smart Eyes</h1>
+                        </div>
+                        <div class="content">
+                            <p>
+                                iSensing Systems
+                            </p>
+                            <p>
+                                iEyes, iHearing and iTouching, etc.
+                            </p>
+                        </div>
+                        <a href="research/research.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control left" href="#myCarousel"
+           data-slide="prev"></a>
+        <a class="carousel-control right" href="#myCarousel"
+           data-slide="next"></a>
+    </div>
+    <p id="middle-title">Science Brings Fun to Life !</p>
+    <img src="image/divider-top.png" class="separator"/>
+    <div id="brief-menu">
+        <div class="menu">
+            <a href="news/news.html"><h1>Latest News</h1></a>
+            <a href="research/research.html"><h1>iVip Research</h1></a>
+            <a href="research/research.html#active"><p>Active Projects</p></a>
+            <a href="research/research.html#past"><p>Past Projects</p></a>
+            <a href="research/research.html#show"><p>Show Room</p></a>
+        </div>
+        <div class="menu">
+            <a href="people/people.html"><h1>Faces of iVip</h1></a>
+            <a href="people/people.html#faculty"><p>Faculty</p></a>
+            <a href="people/people.html#graduates"><p>Ph. D. / Master</p></a>
+            <a href="people/people.html#undergraduates"><p>Undergraduates</p></a>
+            <a href="people/people.html#alumni"><p>Alumni</p></a>
+            <a href="people/people.html#activities"><p>Group Activities</p></a>
+        </div>
+        <div class="menu">
+            <a href="publications/publications.html"><h1>Publications</h1></a>
+            <a href="publications/publications.html#journal"><p>Journal Papers</p></a>
+            <a href="publications/publications.html#conference"><p>Conference Papers</p></a>
+            <a href="publications/publications.html#opensource"><p>Open Source</p></a>
+            <a href="contact/contact.html"><h1>Contact Us</h1></a>
+        </div>
+    </div>
+    <img src="image/divider-bottom.png" class="separator"/>
+    <div class="tail">
+        <div class="outer-link">
+            <!--don't reformat the following four line-->
+            <a href="http://www.tsinghua.edu.cn/publish/newthuen/index.html" target="_blank"><img
+                    src="image/thulogo.jpg"/></a><a
+                href="http://www.ee.tsinghua.edu.cn/publish/eeen/index.html" target="_blank"><img
+                src="image/eelogo.jpg"/></a>
+        </div>
+        <p>Copyright © 2016, iVip Group, NICS Lab,Dept. of EE, Tsinghua University</p>
+        <p>Beijing P.R.C All rights reserved</p>
+        <p>
+            <script>
+                var d = document.lastModified;
+                document.write("Last Update " + d.substring(0, d.lastIndexOf(" ")));
+            </script>
+        </p>
+    </div>
+</div>
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+    var sc_project = 11243080;
+    var sc_invisible = 1;
+    var sc_security = "db324554";
+    var scJsHost = (("https:" == document.location.protocol) ?
+        "https://secure." : "http://www.");
+    document.write("<sc" + "ript type='text/javascript' src='" +
+        scJsHost +
+        "statcounter.com/counter/counter.js'></" + "script>");
+</script>
+<noscript>
+    <div class="statcounter"><a title="web stats"
+                                href="http://statcounter.com/" target="_blank"><img
+            class="statcounter"
+            src="//c.statcounter.com/11243080/0/db324554/1/" alt="web
+stats"></a></div>
+</noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>

@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en" style="overflow-y: scroll">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="icon" type="image/png" href="../image/iViplogo.png"/>
+    <link rel="stylesheet" href="../bootstrap.min.css"/>
+    <script src="../jquery.min.js"></script>
+    <script src="../bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../iVip.css"/>
+    <title>iVip - Research</title>
+</head>
+<body>
+<div id="nav-bar">
+    <div class="container">
+        <a href="../index.html"><img src="../image/iViplogo.png" class="iVip-logo"/></a>
+        <a href="../index.html"><img src="../image/ofTsinghuaUniversity.png" class="tsinghua-logo"/></a>
+        <ul>
+            <li id="nav-contact"><a href="../contact/contact.html">CONTACT</a></li>
+            <li id="nav-publications"><a href="../publications/publications.html">PUBLICATIONS</a></li>
+            <li id="nav-people"><a href="../people/people.html">PEOPLE</a></li>
+            <li id="nav-research" class="active"><a href="../research/research.html">RESEARCH</a></li>
+            <li id="nav-news"><a href="../news/news.html">NEWS</a></li>
+            <li id="nav-home"><a href="../index.html">HOME</a></li>
+        </ul>
+    </div>
+</div>
+<div id="sec-nav-bar">
+    <div class="container">
+        <ul>
+            <script>
+                var ids = ['active', 'past', 'show'];
+                var names = ['Active Project', 'Past Project', 'Show Room'];
+                for (var i = ids.length - 1; i >= 0; i--)
+                    document.write(
+                        '<li id="sec-nav-' + ids[i] + '"><a href="#' + ids[i] + '">' + names[i] + '</a></li>'
+                    );
+            </script>
+        </ul>
+    </div>
+</div>
+<div id="box">
+    <h1>Research</h1>
+    <h2 id="active">Active Project</h2>
+    <div class="research BlueStrongIsSoStrange">
+        <p class="title">Brief Introuduction</p>
+        <p class="content">We are developing <strong>Artificial Perception Systems</strong>, especially the visual
+            perception devices
+            for some embedded application scenario to <strong>enhance environmental awareness</strong> of organism and
+            robots, as well as IOT devices for environment monitoring.</p>
+        <p class="content"><strong>iEyes (intelligent Eyes)</strong> is our FPGA-based vision processing platform, on
+            which some system
+            architectures and algorithms would be evaluated, such as feature extractions with both conventional and
+            prevailing machine learning methods. More, the target application of iEyes platform is location and
+            navigation for various robots, currently.</p>
+        <p class="content">For future systems of ISP and machine learning with even higher energy efficiency
+            requirements, where the
+            current FPGA/ASIC implementations could not achieve, we are developing <strong>Approximate
+                Computing</strong> architecture to balance the energy efficiency and computing quality. We also present
+            the <strong>Physical Computing</strong> architecture for such perception systems, which could extract useful
+            information directly in the analog sensing signal and achieve 3~6 orders of energy-efficiency improvements.
+        </p>
+        <p class="content">Novel devices are also adopted. We are trying to implement the <strong>intelligent contact
+            lens with flexible
+            devices</strong>. Maybe some days later, this kind system for agent Tom Cruise in <strong>Mission
+            Impossible（IV/V） would become mission possible</strong>.</p>
+    </div>
+
+    <hr/>
+
+    <h2 id="past">Past Project</h2>
+    <div class="research BlueStrongIsSoStrange">
+        <p class="title">Brief Introuduction.</p>
+        <p class="content"><strong>LCVCodec:</strong> Low Complexity and Low Power Video Coding with CS, DVC and Blind
+            Signal
+            Seperation.</p>
+        <p class="content"><strong>MCVP:</strong> High-Performance Video Processing with Multi-cores.</p>
+        <p class="content"><strong>MemOpti:</strong> High-Performance and Low-Power Storage Methods of Massive Data for
+            Integrated
+            Digital Video Systems.</p>
+        <p class="content"><strong>LPC 2:</strong> Circuit-Level Low-Power Design for On-Chip Clock Tree at 65nm/45nm
+            Technology Nodes
+            with PVT-Aware Features.</p>
+        <p class="content"><strong>LPC 1:</strong> Circuit-Level Low-Power Techniques for SOC Design, including low
+            power conditional
+            pre-charge DFFs, low-swing interconnects, etc.</p>
+    </div>
+
+    <hr/>
+
+    <h2 id="show">Show Room</h2>
+    <div class="research BlueStrongIsSoStrange">
+        <p class="title">Brief Introuduction</p>
+        <p class="content">Demo systems show ~</p>
+    </div>
+
+    <hr/>
+
+    <div class="tail">
+        <div class="outer-link">
+            <!--don't reformat the following four line-->
+            <a href="http://www.tsinghua.edu.cn/publish/newthuen/index.html" target="_blank"><img
+                    src="../image/thulogo.jpg"/></a><a
+                href="http://www.ee.tsinghua.edu.cn/publish/eeen/index.html" target="_blank"><img
+                src="../image/eelogo.jpg"/></a>
+        </div>
+        <p>Copyright © 2016, iVip Group, NICS Lab,Dept. of EE, Tsinghua University</p>
+        <p>Beijing P.R.C All rights reserved</p>
+        <p>
+            <script>
+                var d = document.lastModified;
+                document.write("Last Update " + d.substring(0, d.lastIndexOf(" ")));
+            </script>
+        </p>
+    </div>
+</div>
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+    var sc_project = 11243080;
+    var sc_invisible = 1;
+    var sc_security = "db324554";
+    var scJsHost = (("https:" == document.location.protocol) ?
+        "https://secure." : "http://www.");
+    document.write("<sc" + "ript type='text/javascript' src='" +
+        scJsHost +
+        "statcounter.com/counter/counter.js'></" + "script>");
+</script>
+<noscript>
+    <div class="statcounter"><a title="web stats"
+                                href="http://statcounter.com/" target="_blank"><img
+            class="statcounter"
+            src="//c.statcounter.com/11243080/0/db324554/1/" alt="web
+stats"></a></div>
+</noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>

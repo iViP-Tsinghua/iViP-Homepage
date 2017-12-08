@@ -1,0 +1,227 @@
+@charset "utf-8";
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+}  
+
+div.hero-unit {
+  text-shadow: 0 0 5px rgba(0,0,0,.2);
+
+}
+div.hero-unit p {
+  font-weight: bold;
+}
+
+div.accordion-group {
+  border: 0
+}
+
+div.row.topic {
+  margin-top: 20px;
+}
+
+div.row.subtopic {
+  margin-bottom: 5px;
+}
+
+div.marketing h1 {
+  text-shadow: 0 0 5px rgba(0,0,0,.2);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+img.move-up {
+  position: relative;
+  top: -6px;
+}
+
+img.divider-top {
+  display: block;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+
+img.divider-bottom {
+  display: block;
+  margin: 25px auto 0 auto;
+}
+
+div.hero-unit {
+  height: 150px
+}
+
+div#scrollnav {
+  margin-top: 40px;
+}
+
+div#mainnav div.navbar-inner li > a {
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+
+div#mainnav div.navbar-inner .active > a {
+  border-left: 1px solid #0055cc;
+  border-right: 1px solid #0055cc;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+#scrollnav div.navbar-inner {
+  min-height: 25px;
+  background-image: -moz-linear-gradient(top, #bce8f1, #bfbfbf);
+  background-image: -ms-linear-gradient(top, #bce8f1, #bfbfbf);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#bce8f1), to(#bfbfbf));
+  background-image: -webkit-linear-gradient(top, #bce8f1, #bfbfbf);
+  background-image: -o-linear-gradient(top, #bce8f1, #bfbfbf);
+  background-image: linear-gradient(top, #bce8f1, #bfbfbf);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bce8f1', endColorstr='#bfbfbf', GradientType=0)
+}
+
+div#scrollnav div.navbar-inner li > a {
+  padding-top: 3px;
+  padding-bottom: 2px;
+  text-shadow: none;
+  color: #303030;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+}
+div#scrollnav div.navbar-inner .active > a,
+div#scrollnav div.navbar-inner .active > a:hover {
+  color: #000000;
+  background-color: #bce8f1;
+  border-left: 1px solid #bce8f1;
+  border-right: 1px solid #bce8f1;
+  
+  background-image: url('../img/highlight-sub.png');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+section h2 {padding-top:65px}
+
+img.scsnitem {
+  display: block;
+  margin: 0 auto;
+}
+
+img.scsnitem[src$=".jpg"] {
+  border: 1px solid #808080;
+  border-radius: 3px;
+}
+
+div.scsnitem {
+  padding: 5px;
+  border: 1px solid transparent;
+  text-align: center;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: table-cell;
+}
+
+div.scsnitem.horizontal {
+  text-align: left;
+  overflow: hidden;
+}
+
+div.scsnitem.horizontal span.item-text-grid {
+  display: none;
+}
+
+div.scsnitem.horizontal span.item-text-list {
+  display: inherit;
+}
+
+div.scsnitem.horizontal div.img-smaller.item-image-grid {
+  display: none;
+}
+
+div.scsnitem.horizontal div.img-smaller.item-image-list {
+  display: inherit;
+  float: left;
+  width: 75px;
+  height: 75px;
+  margin-right: 10px;
+}
+
+div.scsnitem span.item-text-grid {
+  display: inherit;
+}
+
+div.scsnitem span.item-text-list {
+  display: none;
+}
+
+div.scsnitem div.img-smaller.item-image-grid {
+  display: default;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid #808080;
+  border-radius: 3px;
+}
+
+div.scsnitem div.img-smaller.item-image-list {
+  display: none;
+}
+
+div.scsnitem.horizontal img.scsnitem {
+  float: left;
+  margin-right: 10px;
+}
+
+div.scsnitem.horizontal div.img-small {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+div.scsnitem:hover {
+  background-color: #f6e8b0;
+  border: 1px solid #bfbfbf;
+  border-radius: 3px;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #0055cc;
+}
+
+.no-display {
+  display: none;
+}
+
+a.secondary-link {
+  display: block;
+  padding-left: 5px;
+}
+h2 {
+  text-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+h4 {
+  font-size: 13px;
+}
+em {
+  font-weight: 700;
+}
+
+@media (max-width:979px) {
+  div.navbar-fixed-top {
+    margin-bottom: 0;
+  }
+  div#scrollnav {
+    margin-top:0;
+  }
+  div#scrollnav div.navbar-inner {
+    padding: 0;
+  }
+  div#scrollnav div.navbar-inner li > a {
+    padding-top: 2px;
+    padding-bottom: 1px;
+  }
+}
+/* CSS Document */
+

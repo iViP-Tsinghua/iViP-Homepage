@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html lang="en" style="overflow-y: scroll">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="icon" type="image/png" href="../image/iViplogo.png"/>
+    <link rel="stylesheet" href="../bootstrap.min.css"/>
+    <script src="../jquery.min.js"></script>
+    <script src="../bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../iVip.css"/>
+    <title>iVip - People</title>
+</head>
+<body>
+<div id="nav-bar">
+    <div class="container">
+        <a href="../index.html"><img src="../image/iViplogo.png" class="iVip-logo"/></a>
+        <a href="../index.html"><img src="../image/ofTsinghuaUniversity.png" class="tsinghua-logo"/></a>
+        <ul>
+            <li id="nav-contact"><a href="../contact/contact.html">CONTACT</a></li>
+            <li id="nav-publications"><a href="../publications/publications.html">PUBLICATIONS</a></li>
+            <li id="nav-people" class="active"><a href="../people/people.html">PEOPLE</a></li>
+            <li id="nav-research"><a href="../research/research.html">RESEARCH</a></li>
+            <li id="nav-news"><a href="../news/news.html">NEWS</a></li>
+            <li id="nav-home"><a href="../index.html">HOME</a></li>
+        </ul>
+    </div>
+</div>
+<div id="sec-nav-bar">
+    <div class="container">
+        <ul>
+            <script>
+                var ids = ['faculty', 'graduates', 'undergraduates', 'alumni', 'activities'];
+                var names = ['Faculty', 'Ph. D. / Master', 'Undergraduates', 'Alumni', 'Group Activities'];
+                for (var i = ids.length - 1; i >= 0; i--)
+                    document.write(
+                        '<li id="sec-nav-' + ids[i] + '"><a href="#' + ids[i] + '">' + names[i] + '</a></li>'
+                    );
+            </script>
+        </ul>
+    </div>
+</div>
+<div id="box">
+    <h1>People</h1>
+    <h2 id="faculty">Faculty</h2>
+    <div class="people">
+        <a target="_blank" href="http://nics.ee.tsinghua.edu.cn/people/qiaofei/">
+            <div>
+                <img src="feiqiao_2015.jpg"/>
+                <p><strong>Fei Qiao</strong></p>
+                <p>Associate Professor</p>
+            </div>
+        </a>
+        <a target="_blank"
+           href="http://www.ee.tsinghua.edu.cn/publish/ee/4157/2013/20130321084602199484431/20130321084602199484431_.html">
+            <div>
+                <img src="qiwei.jpg"/>
+                <p><strong>Qi Wei</strong></p>
+                <p>Assistant Professor</p>
+            </div>
+        </a>
+        <a target="_blank"
+           href="http://www.ee.tsinghua.edu.cn/publish/ee/4157/2010/20101217190600542871944/20101217190600542871944_.html">
+            <div>
+                <img src="huazhongyang.jpg"/>
+                <p><strong>Huazhong Yang</strong></p>
+                <p>Professor</p>
+            </div>
+        </a>
+    </div>
+    <h2 id="graduates">Ph. D. / Master</h2>
+    <div class="people">
+        <script>
+            function code(name, title, picture, page) {
+                document.write(
+                    '<a target="_blank" href="' + page + '">' +
+                    '<div>' +
+                    '<img src="' + picture + '"/>' +
+                    '<p><strong>' + name + '</strong></p>' +
+                    '<p>' + title + '</p>' +
+                    '</div>' +
+                    '</a>'
+                );
+            }
+
+            code(
+                "Zheyu Liu",
+                "Ph. D. Student",
+                "Zheyu_Liu/Zheyu_Liu.jpg",
+                "http://nics.ee.tsinghua.edu.cn/people/liuzy/"
+            );
+
+            code(
+                "Qin Li",
+                "Ph. D. Student",
+                "Qin_Li/Qin_Li.jpg",
+                "http://nics.ee.tsinghua.edu.cn/people/liqin/"
+            );
+
+            code(
+                "Han Xu",
+                "Ph. D. Student",
+                "Han_Xu/Han_Xu.jpg",
+                "not_implemented.html"
+            );
+        </script>
+    </div>
+    <div class="people">
+        <script>
+            code(
+                "Xueshi Li",
+                "M.S. Student",
+                "Xueshi_Li/Xueshi_Li.jpg",
+                "not_implemented.html"
+            );
+            code(
+                "Zhen Liu",
+                "M.S. Student",
+                "Zhen_Liu/Zhen_Liu.png",
+                "not_implemented.html"
+            );
+            code(
+                "Hong Liu",
+                "M.S. Student",
+                "Hong_Liu/Hong_Liu.jpg",
+                "http://nics.ee.tsinghua.edu.cn/people/liuhong/"
+            );
+            code(
+                "Kaige Jia",
+                "M.S. Student",
+                "Kaige_Jia/Kaige_Jia.jpg",
+                "not_implemented.html"
+            );
+        </script>
+    </div>
+    <h2>Undergraduate Research Assistant</h2>
+    <div class="people">
+        <script>
+            code(
+                "Huifeng Zhu",
+                "Undergraduate Student",
+                "Huifeng_Zhu/Huifeng_Zhu.jpg",
+                "./Huifeng_Zhu/"
+            )
+        </script>
+    </div>
+    <hr class="clear"/>
+    <h2 id="undergraduates">Interns, Undergraduate Students and SRT Program</h2>
+    <div class="people">
+        <p class="left"><strong class="year">2017</strong><strong class="Undergraduate">Undergraduate</strong>李盛，牟永奇，吴赟韬，孙咏哲，许晗，于梦琦
+        </p>
+        <p class="left"><strong class="year">2016</strong><strong class="SRT">SRT</strong>陈国智，陈彦熹，樊子辰，李子儒，马栩杰，孙克，许天奇，易金辉，王子颉，张静阳，赵旺，赵雅娟，钟凯
+        </p>
+        <p class="left"><strong class="year">2016</strong><strong class="Intern">Intern</strong>李竑宙，李英嘉，高小寒，江宇鹏，钟姝，魏畅，黄南阳，祝逸哲，樊子辰，付钰，秦爽，陈伟哲，李英民，李嘉慧，曹乾，陈宇阳，邓嘉程，丁培耕，费元圆，郝泽宇，贺子昊，洪颖臻，洪子伦，集翔宇，李宗典，林文鼎，刘冰，刘明烜，任鹏飞，孙本聪，唐佳鑫，田阔，王诚，张博洋，张天阳，张伟茁，张亦之，赵家祺，朱一丹，邹天奇，曲铮，陈蔚杭
+        </p>
+        <p class="left"><strong class="year">2016</strong><strong class="Undergraduate">Undergraduate</strong>陈晓宇，冉宇，王钲荣，吴楠，邢越，朱骁，贾凯歌，李钦，刘鸿
+        </p>
+        <p class="left"><strong class="year">2015</strong><strong class="SRT">SRT</strong>倪骁然，张子函，王洪淼，逯睿琦阳，秦爽</p>
+        <p class="left"><strong class="year">2015</strong><strong class="Intern">Intern</strong>白阳，史根茂，徐泽厚，石勇，赵发举，韩文韬，杜渺，晏先峰，李经纬，姜思羽，侯天航，何兰青，王健，程浩宇
+        </p>
+        <p class="left"><strong class="year">2015</strong><strong class="Undergraduate">Undergraduate</strong>Longjia
+            Niu（牛龙佳），Xueshi Li（李学士），Zheyu Liu（刘哲宇），Maolin Wang（王茂林），Yuan Zhou（周远）</p>
+        <p class="left"><strong class="year">2014</strong><strong class="Intern">Intern</strong>张钰珂，李璐，单道阳，卞维杰，李学士，何振豪
+        </p>
+        <p class="left"><strong class="year">2014</strong><strong class="Undergraduate">Undergraduate</strong>Ruya
+            Peng（彭儒雅）, Shuhao Jiang（江树浩），Sijie Ding（丁思杰），Bowen Yang（杨博文），Junkai Yan（闫俊凯）</p>
+        <p class="left"><strong class="year">2014</strong><strong class="SRT">SRT</strong>陈晟，
+            李建锋，李钦，何宇帆，刘拓，吴楠，赵雷彧，夏江月，王殷豪，王妍，李天润，杨一雄，张亚驰，孙文钰，刘鸿，庄永文，姜学峰，王凌晓</p>
+        <p class="left"><strong class="year">2013</strong><strong class="SRT">SRT</strong>张维忆，刘月</p>
+        <p class="left"><strong class="year">2013</strong><strong class="Undergraduate">Undergraduate</strong>Mingda
+            Yang（杨敏达），Yi Li（李义），Xunzhao Yin（尹勋钊)</p>
+        <p class="left"><strong class="year">2013</strong><strong class="SRT">SRT</strong>杨镇铭，龙槺，樊云鹏，侯岩，王亭午，关雯方，孙子腾，李飞天，谷芃，阮念寿
+        </p>
+        <p class="left"><strong class="year">2012</strong><strong class="Undergraduate">Undergraduate</strong>Yao
+            Lu（陆垚），He Zhao（赵鹤），Wenwen Han（韩文雯）</p>
+        <p class="left"><strong class="year">2012</strong><strong class="SRT">SRT</strong>彭士贤 ，李翰林，丁思杰</p>
+        <p class="left"><strong class="year">2011</strong><strong class="Undergraduate">Undergraduate</strong>Di
+            Zhu（朱笛）, Xiao Yang（杨晓）, Zidong Du（杜子东）, Si Wu（吴思）, Xinghua Yang（杨兴华）, Lu Shao（邵璐）, Shuang Yu（于爽）</p>
+        <p class="left"><strong class="year">2011</strong><strong class="SRT">SRT</strong>王碧琳，郭大卫，苏珊，张越，姜秀宝</p>
+        <p class="left"><strong class="year">2010</strong><strong class="Undergraduate">Undergraduate</strong>Kunzhi
+            Xie（谢坤志）, Bo Wang（王波)</p>
+        <p class="left"><strong class="year">2010</strong><strong class="SRT">SRT</strong>李灿，杨敏达</p>
+        <p class="left"><strong class="year">2009</strong><strong class="Undergraduate">Undergraduate</strong>Wei
+            Qi（漆维）, Yuan Zhou（周元）, Shanqiu Li（李善秋）, Jing Peng（彭锦）, Jian Wu（吴健）, Huabin Cheng（程华斌）</p>
+        <p class="left"><strong class="year">2009</strong><strong class="SRT">SRT</strong>
+            田露，杜子东，杨晓，孙祎，朱笛，米国浩，傅向义，刘景初，黄嘉晨，张泽琦，刘硕，孙东凯，任爽，王婧文，陈晓智，刘昂立，刘畅</p>
+        <p class="left"><strong class="year">2008</strong><strong class="Undergraduate">Undergraduate</strong>Hua
+            Cheng（程华）, Zhoujie Liu（刘洲杰），Ni Zhou（周妮） ，Sisi Tan（谭斯斯）</p>
+        <p class="left"><strong class="year">2007</strong><strong class="Undergraduate">Undergraduate</strong>Yidong
+            Liu（刘毅东）, Zhenhua Ye（叶珍华）</p>
+        <p class="left"><strong class="year">2007</strong><strong class="SRT">SRT</strong>彭瑶，朱凯，彭锦</p>
+    </div>
+    <hr class="clear"/>
+    <h2 id="alumni">Alumni</h2>
+    <div class="people">
+        <p class="left"><strong class="year">2016</strong><strong class="company">华为</strong>Yi Li（李义）</p>
+        <p class="left"><strong class="year">2016</strong><strong class="company">乐视</strong>Liang Zhang（张亮）</p>
+        <p class="left"><strong class="year">2014</strong><strong class="company">国企</strong>Chang Liu（刘畅)</p>
+        <p class="left"><strong class="year">2014</strong><strong class="company">网易游戏</strong>Xiao Yang（杨晓)</p>
+        <p class="left"><strong class="year">2014</strong><strong class="company">百度</strong>Ni Zhou（周妮）</p>
+        <p class="left"><strong class="year">2014</strong><strong class="company">国企</strong>Kunzhi Xie（谢坤志）</p>
+        <p class="left"><strong class="year">2014</strong><strong class="company">中科院自动化所</strong>Lu Shao（邵璐)</p>
+        <p class="left"><strong class="year">2014</strong><strong class="company">Nokia, Microsoft</strong>Shuang Yu（于爽）
+        </p>
+        <p class="left"><strong class="year">2013</strong><strong class="company">国企</strong>Jing Liu（刘静）</p>
+        <p class="left"><strong class="year">2013</strong><strong class="company">国企</strong>Bingbing Xia（夏冰冰）</p>
+        <p class="left"><strong class="year">2012</strong><strong class="company">百度</strong>Wei Qi（漆维)</p>
+        <p class="left"><strong class="year">2012</strong><strong class="company">高拓迅达</strong>Junjun Ma（马骏骏）</p>
+        <p class="left"><strong class="year">2011</strong><strong class="company">Marvell</strong>Sisi Tan（谭斯斯）</p>
+        <p class="left"><strong class="year">2010</strong><strong class="company">中学</strong>Fucheng Liao（廖富成）</p>
+        <p class="left"><strong class="year">2010</strong><strong class="company">证券</strong>Chang Li（李常）</p>
+    </div>
+    <hr class="clear"/>
+    <h2 id="activities">Group Activities</h2>
+    <hr class="clear"/>
+    <div class="tail">
+        <div class="outer-link">
+            <!--don't reformat the following four line-->
+            <a href="http://www.tsinghua.edu.cn/publish/newthuen/index.html" target="_blank"><img
+                    src="../image/thulogo.jpg"/></a><a
+                href="http://www.ee.tsinghua.edu.cn/publish/eeen/index.html" target="_blank"><img
+                src="../image/eelogo.jpg"/></a>
+        </div>
+        <p>Copyright © 2016, iVip Group, NICS Lab,Dept. of EE, Tsinghua University</p>
+        <p>Beijing P.R.C All rights reserved</p>
+        <p>
+            <script>
+                var d = document.lastModified;
+                document.write("Last Update " + d.substring(0, d.lastIndexOf(" ")));
+            </script>
+        </p>
+    </div>
+</div>
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+    var sc_project = 11243080;
+    var sc_invisible = 1;
+    var sc_security = "db324554";
+    var scJsHost = (("https:" == document.location.protocol) ?
+        "https://secure." : "http://www.");
+    document.write("<sc" + "ript type='text/javascript' src='" +
+        scJsHost +
+        "statcounter.com/counter/counter.js'></" + "script>");
+</script>
+<noscript>
+    <div class="statcounter"><a title="web stats"
+                                href="http://statcounter.com/" target="_blank"><img
+            class="statcounter"
+            src="//c.statcounter.com/11243080/0/db324554/1/" alt="web
+stats"></a></div>
+</noscript>
+<!-- End of StatCounter Code for Default Guide -->
+</body>
+</html>

@@ -1,0 +1,494 @@
+/*
+all by Hong Liu
+2016 Sep. 5th
+*/
+
+#nav-bar {
+    z-index: 1000000;
+    width: 100%;
+    height: 40px;
+    background-image: linear-gradient(0deg, rgba(24, 161, 227, 1.00) 0%, rgba(0, 85, 204, 1.00) 100%);
+    position: fixed;
+}
+
+#nav-bar .container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#nav-bar .iVip-logo {
+    height: 40px;
+    float: left;
+    margin: 0 0 0 10px;
+}
+
+#nav-bar .tsinghua-logo {
+    height: 40px;
+    float: left;
+    margin: 0;
+}
+
+#nav-bar li {
+    float: right;
+    list-style: none;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+#nav-bar ul {
+    float: right;
+}
+
+#nav-bar li a {
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 40px;
+    color: #ffffff;
+    padding: 0 10px;
+}
+
+#nav-bar li a:active {
+    text-decoration: none;
+    color: #e2e2e2;
+}
+
+#nav-bar li a:hover {
+    text-decoration: none;
+    color: #e2e2e2;
+}
+
+#nav-bar li.active {
+    border-left: 1px solid #0055cc;
+    border-right: 1px solid #0055cc;
+    background-color: #0088CC;
+}
+
+#sec-nav-bar {
+    z-index: 1000000;
+    width: 100%;
+    height: 25px;
+    background-image: linear-gradient(0deg, rgba(191, 200, 201, 1.00) 0%, rgb(149, 159, 161) 100%);
+    position: fixed;
+    margin-top: 40px;
+}
+
+#sec-nav-bar .container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#sec-nav-bar li {
+    float: right;
+    list-style: none;
+}
+
+#sec-nav-bar li a {
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 25px;
+    color: black;
+    padding: 0 10px;
+    border-radius: 3px;
+}
+
+#sec-nav-bar li a:hover, #sec-nav-bar li.active a {
+    color: #575757;
+    background-color: #BCE8F1;
+}
+
+#box {
+    position: absolute;
+    width: 960px;
+    margin-top: 40px;
+    left: 50%;
+    margin-left: -480px;
+}
+
+#box #myCarousel .myitem {
+    border-radius: 10px;
+    width: 100%;
+    height: 360px;
+}
+
+#box #myCarousel .myitem .in-item {
+    margin: 0 10%;
+    text-shadow: 0 0 5px rgba(0, 0, 0, .2);
+}
+
+#box #myCarousel .myitem .in-item p {
+    text-indent: 2em;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#box #myCarousel .myitem .in-item h1 {
+    margin: 0 auto 10px auto;
+    padding-top: 0.67em;
+    font-size: 60px;
+}
+
+#box #myCarousel .myitem .in-item h1 img {
+    height: 50px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+#box #myCarousel .myitem .in-item .content {
+    height: 150px;
+    text-align: justify;
+}
+
+#box .carousel-control {
+    width: 10%;
+}
+
+#box .carousel-control {
+    opacity: 0.2;
+    border-radius: 10px;
+}
+
+#box .carousel-control:hover {
+    opacity: 0.5;
+}
+
+#box .carousel-indicators .active {
+    background-color: #2e6da4;
+}
+
+#box .carousel-indicators li {
+    border-color: #2e6da4;
+}
+
+#box .btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.42857143;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #2e6da4;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #337ab7;
+}
+
+#box .btn:hover, #box .btn:active {
+    background-color: #28608F
+}
+
+#box #middle-title {
+    text-align: center;
+    font-size: 30px;
+    margin: 70px 0 30px 0;
+    text-shadow: 0 0 5px rgba(0, 0, 0, .2);
+}
+
+#box .separator {
+    display: block;
+    margin: 0 auto;
+}
+
+#box #brief-menu {
+    width: 660px;
+    margin: 0 auto;
+}
+
+#box #brief-menu .menu {
+    display: inline-block;
+    float: left;
+    width: 200px;
+    margin: 0 10px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, .2);
+}
+
+#box #brief-menu .menu a {
+    text-decoration: none;
+}
+
+#box #brief-menu .menu h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px auto 10px auto;
+}
+
+#box #brief-menu .menu p {
+    font-size: 15px;
+    text-indent: 10px;
+    line-height: 15px;
+}
+
+#box .tail .outer-link {
+    margin: 50px auto 30px auto;
+    width: 380px;
+}
+
+#box .tail img {
+    width: 150px;
+    margin: 0 20px;
+}
+
+#box .tail p {
+    text-align: center;
+    line-height: 1;
+    font-size: 12px;
+    font-weight: bold;
+    color: #5e5e5e;
+    text-transform: uppercase;
+}
+
+#box h1 {
+    font-size: 40px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    font-weight: bold;
+    margin: 100px 80px 60px 80px;
+}
+
+#box h2 {
+    font-size: 30px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, .2);
+    font-weight: 500;
+    margin: 60px 80px 10px 80px;
+}
+
+#box h2:target {
+    padding-top: 85px;
+}
+
+#box .news {
+    text-align: justify;
+    margin: 60px 80px 40px 80px;
+}
+
+#box .news .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#box .news .content {
+    text-indent: 2em;
+}
+
+#box .news .keyword {
+    font-weight: bold;
+}
+
+#box .news .contact {
+    font-size: 18px;
+}
+
+#box .research {
+    text-align: justify;
+    margin: 60px 80px 40px 80px;
+}
+
+#box .research .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#box .research .content {
+    text-indent: 2em;
+}
+
+#box .research .keyword {
+    font-weight: bold;
+}
+
+#box .research .contact {
+    font-size: 18px;
+}
+
+#box hr {
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    width: 100%;
+    color: #987cb9;
+    size: 1px;
+}
+
+#box .BlueStrongIsSoStrange strong {
+    color: blue;
+}
+
+#box .people {
+    margin: 40px auto 0 80px;
+}
+
+#box .people a {
+    display: inline-block;
+    background-color: transparent;
+    transition: 0.5s;
+    text-decoration: none;
+    color: #215a85;
+    border-radius: 6px;
+    margin: 30px 20px;
+}
+
+#box .people a:hover, #box .people a:active {
+    background-color: #ffd8d3;
+    transition: 0.5s;
+}
+
+#box .people div {
+    width: 160px;
+    padding: 5px;
+}
+
+#box .people p {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1;
+    text-indent: 0;
+    margin-top: 10px;
+}
+
+#box .people img {
+    width: 150px;
+    height: 200px;
+    border-radius: 6px;
+}
+
+#box .people p.left {
+    padding: 5px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-indent: 0;
+    margin-top: -10px;
+    text-align: justify;
+    border-radius: 3px;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+#box .people p.left:hover {
+    background-color: #ffd8d3;
+    transition: 0.5s;
+}
+
+#box .people p.left strong {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+    vertical-align: text-top;
+    text-align: center;
+    border-radius: .25em;
+    margin-right: 3px;
+}
+
+#box .people p.left strong.year {
+    background-color: #0055cc;
+}
+
+#box .people p.left strong.Intern {
+    background-color: #f0ad4e;
+}
+
+#box .people p.left strong.SRT {
+    background-color: #5cb85c;
+}
+
+#box .people p.left strong.Undergraduate {
+    background-color: #a8656e;
+}
+
+#box .people p.left strong.company {
+    background-color: #5BC0DE;
+}
+
+#box .paper {
+    margin: 40px auto 40px 80px;
+    text-align: justify;
+}
+
+#box .paper div {
+    width: 160px;
+    padding: 5px;
+}
+
+#box .paper p {
+    text-indent: 0;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: -10px;
+    text-align: justify;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+#box .paper p:hover {
+    background-color: #ffd8d3;
+    transition: 0.5s;
+}
+
+#box .paper p strong {
+    font-weight: bold;
+}
+
+#box .paper p strong.year {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+    vertical-align: text-top;
+    text-align: center;
+    border-radius: .25em;
+    margin-right: 3px;
+    background-color: #F0AD4E;
+}
+
+#box #iVipvision {
+    display: inline-block;
+    float: left;
+    margin: 0 80px 20px 80px;
+    text-align: justify;
+}
+
+#box #iVipvision h2 {
+    font-size: 30px;
+    margin: 10px auto 20px 0;
+}
+
+#box #iVipvision p {
+    font-size: 20px;
+    text-indent: 2em;
+}
+
+#box #publications span {
+    font-size: 60%;
+    margin-left: 20px;
+}
+
+#box #publications span a {
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+#box #contactmethod div {
+    float: left;
+    width: 320px;
+    margin: 80px;
+}
+
+#box #contactmethod div p.title {
+    font-size: 20px;
+    font-weight: bold;
+}
