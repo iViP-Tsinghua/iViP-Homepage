@@ -40,62 +40,65 @@
 </div>
 <div id="box">
     <h1>People</h1>
+    <script>
+        function gen_html(name, title, picture, page, altPage = null) {
+            var actualPage;
+            if (altPage !== null && !/tsinghua\.edu\.cn/.test(window.location.hostname)){
+                actualPage = altPage;
+            } else {
+                actualPage = page;
+            }
+            document.write(
+                '<a target="_blank" href="' + actualPage + '">' +
+                '<div>' +
+                '<img src="' + picture + '"/>' +
+                '<p><strong>' + name + '</strong></p>' +
+                '<p>' + title + '</p>' +
+                '</div>' +
+                '</a>'
+            );
+        }
+    </script>
     <h2 id="faculty">Faculty</h2>
     <div class="people">
-        <a target="_blank" href="http://nics.ee.tsinghua.edu.cn/people/qiaofei/">
-            <div>
-                <img src="feiqiao_2015.jpg"/>
-                <p><strong>Fei Qiao</strong></p>
-                <p>Associate Professor</p>
-            </div>
-        </a>
-        <a target="_blank"
-           href="http://www.ee.tsinghua.edu.cn/publish/ee/4157/2013/20130321084602199484431/20130321084602199484431_.html">
-            <div>
-                <img src="qiwei.jpg"/>
-                <p><strong>Qi Wei</strong></p>
-                <p>Assistant Professor</p>
-            </div>
-        </a>
-        <a target="_blank"
-           href="http://www.ee.tsinghua.edu.cn/publish/ee/4157/2010/20101217190600542871944/20101217190600542871944_.html">
-            <div>
-                <img src="huazhongyang.jpg"/>
-                <p><strong>Huazhong Yang</strong></p>
-                <p>Professor</p>
-            </div>
-        </a>
+        <script>
+            gen_html(
+                "Fei Qiao",
+                "Associate Professor",
+                "feiqiao_2015.jpg",
+                "http://nics.ee.tsinghua.edu.cn/people/qiaofei/",
+                "https://ivip-tsinghua.github.io/Fei_Qiao/"
+                );
+            gen_html(
+                "Qi Wei",
+                "Assistant Professor",
+                "qiwei.jpg",
+                "http://www.ee.tsinghua.edu.cn/publish/ee/4157/2013/20130321084602199484431/20130321084602199484431_.html"
+            );
+            gen_html(
+                "Huazhong Yang",
+                "Professor",
+                "huazhongyang.jpg",
+                "http://www.ee.tsinghua.edu.cn/publish/ee/4157/2010/20101217190600542871944/20101217190600542871944_.html"
+            )
+        </script>
     </div>
     <h2 id="graduates">Ph. D. / Master</h2>
     <div class="people">
         <script>
-            function code(name, title, picture, page) {
-                document.write(
-                    '<a target="_blank" href="' + page + '">' +
-                    '<div>' +
-                    '<img src="' + picture + '"/>' +
-                    '<p><strong>' + name + '</strong></p>' +
-                    '<p>' + title + '</p>' +
-                    '</div>' +
-                    '</a>'
-                );
-            }
-
-            code(
+            gen_html(
                 "Zheyu Liu",
                 "Ph. D. Student",
                 "Zheyu_Liu/Zheyu_Liu.jpg",
                 "http://nics.ee.tsinghua.edu.cn/people/liuzy/"
             );
-
-            code(
+            gen_html(
                 "Qin Li",
                 "Ph. D. Student",
                 "Qin_Li/Qin_Li.jpg",
                 "http://nics.ee.tsinghua.edu.cn/people/liqin/"
             );
-
-            code(
+            gen_html(
                 "Han Xu",
                 "Ph. D. Student",
                 "Han_Xu/Han_Xu.jpg",
@@ -105,25 +108,25 @@
     </div>
     <div class="people">
         <script>
-            code(
+            gen_html(
                 "Xueshi Li",
                 "M.S. Student",
                 "Xueshi_Li/Xueshi_Li.jpg",
                 "not_implemented.html"
             );
-            code(
+            gen_html(
                 "Zhen Liu",
                 "M.S. Student",
                 "Zhen_Liu/Zhen_Liu.png",
                 "not_implemented.html"
             );
-            code(
+            gen_html(
                 "Hong Liu",
                 "M.S. Student",
                 "Hong_Liu/Hong_Liu.jpg",
                 "http://nics.ee.tsinghua.edu.cn/people/liuhong/"
             );
-            code(
+            gen_html(
                 "Kaige Jia",
                 "M.S. Student",
                 "Kaige_Jia/Kaige_Jia.jpg",
@@ -134,12 +137,12 @@
     <h2>Undergraduate Research Assistant</h2>
     <div class="people">
         <script>
-            code(
+            gen_html(
                 "Huifeng Zhu",
                 "Undergraduate Student",
                 "Huifeng_Zhu/Huifeng_Zhu.jpg",
                 "./Huifeng_Zhu/"
-            )
+            );
         </script>
     </div>
     <hr class="clear"/>
